@@ -1,0 +1,12 @@
+@import url(/assets/styles/style.css);
+
+.amount {
+  border: 1px solid var(--yellow);
+  background: var(--black-blue);
+  color: var(--white);
+}
+
+.amount:active {
+  background: var(--green);
+  color: var(--green);
+}
