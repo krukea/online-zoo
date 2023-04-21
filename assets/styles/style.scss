@@ -1,33 +1,43 @@
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('Roboto-Bold.woff2') format('woff2'),
+    url('Roboto-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto"), local("Roboto-Regular"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'), url('Roboto-Regular.woff2') format('woff2'),
+    url('Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto Light"), local("Roboto-Light"), url("Roboto-Light.woff2") format("woff2"), url("Roboto-Light.woff") format("woff");
+  font-family: 'Roboto';
+  src: local('Roboto Light'), local('Roboto-Light'), url('Roboto-Light.woff2') format('woff2'),
+    url('Roboto-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("Roboto-Medium.woff2") format("woff2"), url("Roboto-Medium.woff") format("woff");
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('Roboto-Medium.woff2') format('woff2'),
+    url('Roboto-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto Thin"), local("Roboto-Thin"), url("Roboto-Thin.woff2") format("woff2"), url("Roboto-Thin.woff") format("woff");
+  font-family: 'Roboto';
+  src: local('Roboto Thin'), local('Roboto-Thin'), url('Roboto-Thin.woff2') format('woff2'),
+    url('Roboto-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
 }
+
 :root {
   --green: #4b9200;
   --orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
@@ -55,7 +65,9 @@
       #eaf7fe 127.9%,
       #eaf7fe 149.54%
     );
+
   --dark-orange: #e47209;
+
   --pink-gradient: linear-gradient(
       315.75deg,
       rgba(254, 189, 171, 0.74) 30.06%,
@@ -72,6 +84,7 @@
       #eaf7fe 127.9%,
       #eaf7fe 149.54%
     );
+
   --red: #d31414;
   --black-blue: #333b41;
   --gray: #767474;
@@ -95,13 +108,15 @@ html {
 body {
   min-width: 1600px;
   min-height: 100vh;
+
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   margin: 0;
   padding: 0;
+
   color: var(--basic-black);
   background: var(--basic-white);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -111,9 +126,11 @@ body {
 a {
   text-decoration: none;
   color: var(--green);
-}
-a:hover, a:active {
-  color: var(--plain-orange);
+
+  &:hover,
+  &:active {
+    color: var(--plain-orange);
+  }
 }
 
 img {
@@ -153,7 +170,7 @@ footer {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 114px;
@@ -162,7 +179,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -170,7 +187,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -178,7 +195,7 @@ h3 {
 }
 
 .subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -189,7 +206,7 @@ h3 {
 .btn {
   background: var(--orange);
   color: var(--white);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -200,26 +217,31 @@ h3 {
   cursor: pointer;
   padding: 16px;
   min-width: 298px;
-}
-.btn.btn-square {
-  border-radius: 5px;
-}
-.btn:hover {
-  background: var(--dark-orange);
-}
-.btn:active {
-  background: var(--green);
-}
-.btn:disabled {
-  background: var(--gray);
+
+  &.btn-square {
+    border-radius: 5px;
+  }
+
+  &:hover {
+    background: var(--dark-orange);
+  }
+
+  &:active {
+    background: var(--green);
+  }
+
+  &:disabled {
+    background: var(--gray);
+  }
 }
 
-input[type=text] {
+input[type='text'] {
   border-radius: 2px;
   border-color: var(--plain-orange);
-}
-input[type=text]:active {
-  border-color: var(--green);
+
+  &:active {
+    border-color: var(--green);
+  }
 }
 
 .error {
@@ -228,7 +250,7 @@ input[type=text]:active {
 }
 
 .small-p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -239,10 +261,11 @@ input[type=text]:active {
   background: var(--light-gray);
   border: 1px solid var(--black-blue);
   border-radius: 5px;
-}
-.send--btn:active {
-  border-color: var(--green);
-  color: var(--green);
+
+  &:active {
+    border-color: var(--green);
+    color: var(--green);
+  }
 }
 
 .page-header {
@@ -250,6 +273,7 @@ input[type=text]:active {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+
   padding: 14px 0;
 }
 
@@ -284,48 +308,65 @@ input[type=text]:active {
 
 .page-footer {
   padding: 40px 0 50px 0;
+
   display: grid;
-  grid-template-areas: "logo . subscribe" "donate . ." "social nav copyright";
+  grid-template-areas:
+    'logo . subscribe'
+    'donate . .'
+    'social nav copyright';
   row-gap: 36px;
-}
-.page-footer .logo {
-  grid-area: logo;
-}
-.page-footer .subscribe {
-  grid-area: subscribe;
-}
-.page-footer .subscribe .subscribe__title {
-  color: var(--white);
-}
-.page-footer .donate__btn {
-  grid-area: donate;
-  max-width: 298px;
-}
-.page-footer .socials__list {
-  grid-area: social;
-  align-self: flex-end;
-}
-.page-footer .socials__list .socials__link {
-  color: var(--white);
-}
-.page-footer .socials__list .socials__link:hover {
-  color: var(--green);
-}
-.page-footer .site-navigation {
-  grid-area: nav;
-  align-self: flex-end;
-}
-.page-footer .site-navigation .site-navigation__item {
-  padding-left: 0;
-  padding-right: 58px;
-}
-.page-footer .copyright__link {
-  grid-area: copyright;
-  align-self: flex-end;
-  font-family: "Roboto-Thin", sans-serif;
-  line-height: 130%;
-}
-.page-footer .copyright__link:hover, .page-footer .copyright__link:active {
-  text-decoration: underline;
-  color: var(--green);
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .subscribe {
+    grid-area: subscribe;
+
+    .subscribe__title {
+      color: var(--white);
+    }
+  }
+
+  .donate__btn {
+    grid-area: donate;
+    max-width: 298px;
+  }
+
+  .socials__list {
+    grid-area: social;
+    align-self: flex-end;
+
+    .socials__link {
+      color: var(--white);
+
+      &:hover {
+        color: var(--green);
+      }
+    }
+  }
+
+  .site-navigation {
+    grid-area: nav;
+    align-self: flex-end;
+
+    .site-navigation__item {
+      padding-left: 0;
+      padding-right: 58px;
+    }
+  }
+
+  .copyright__link {
+    grid-area: copyright;
+    align-self: flex-end;
+
+    font-family: 'Roboto-Thin', sans-serif;
+    line-height: 130%;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+      color: var(--green);
+    }
+  }
 }
