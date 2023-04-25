@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
   <link rel="stylesheet" href="style.css">
   <title>About</title>
 </head>
@@ -56,10 +56,10 @@
       </a>
 
       <div class="subscribe">
-        <p class="subscribe__title subtitle">Subscribe to our news</p>
         <form action="" method="post" class="subscribe__form">
-          <input type="text" name="email" id="email">
-          <input type="submit" value="Submit">
+          <p class="subscribe__title subtitle">Subscribe to our news</p>
+          <input type="text" name="email" id="email" placeholder="Enter your email">
+          <input type="submit" value="Submit" class="send--btn">
         </form>
       </div>
 
@@ -67,16 +67,16 @@
 
       <ul class="socials__list">
         <li class="socials__item">
-          <a href="https://fb.com" class="socials__link">Facebook</a>
+          <a href="https://fb.com" class="socials__link" id="fb">Facebook</a>
         </li>
         <li class="socials__item">
-          <a href="https://twitter.com" class="socials__link">Twitter</a>
+          <a href="https://twitter.com" class="socials__link" id="twitter">Twitter</a>
         </li>
         <li class="socials__item">
-          <a href="https://instagram.com" class="socials__link">Instagram</a>
+          <a href="https://instagram.com" class="socials__link" id="instagram">Instagram</a>
         </li>
         <li class="socials__item">
-          <a href="https://youtube.com" class="socials__link">YouTube</a>
+          <a href="https://youtube.com" class="socials__link" id="yt">YouTube</a>
         </li>
       </ul>
 
@@ -97,10 +97,14 @@
         </ul>
       </nav>
 
-      <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="copyright__link">
-        Designed by Alisa Samborskaya<br>
-        ©RSSchool & ©Yem Digital 2021
-      </a>
+      <div class="copyright__link">
+        <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">
+          Designed by Alisa Samborskaya</a>
+        <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">
+          ©RSSchool & ©Yem Digital 2021
+        </a>
+      </div>
+
     </div>
   </footer>
 
