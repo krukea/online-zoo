@@ -245,13 +245,14 @@ input[type='text'] {
   border-radius: 2px;
   outline: 0.7px solid var(--plain-orange);
   line-height: 140%;
+  max-height: 42px;
 
   &:focus {
     outline-color: var(--green);
   }
 }
 
-input[type='submit'] {
+button[type='submit'] {
   background: var(--light-gray);
   border: none;
   outline: 1px solid var(--black-blue);
@@ -343,6 +344,7 @@ input[type='submit'] {
     }
 
     #email {
+      width: 228px;
       padding: 10px 7px 10px 10px;
       margin-right: 10px;
       background-color: var(--basic-black);

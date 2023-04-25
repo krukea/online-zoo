@@ -224,12 +224,13 @@ input[type=text] {
   border-radius: 2px;
   outline: 0.7px solid var(--plain-orange);
   line-height: 140%;
+  max-height: 42px;
 }
 input[type=text]:focus {
   outline-color: var(--green);
 }
 
-input[type=submit] {
+button[type=submit] {
   background: var(--light-gray);
   border: none;
   outline: 1px solid var(--black-blue);
@@ -238,7 +239,7 @@ input[type=submit] {
   line-height: 140%;
   cursor: pointer;
 }
-input[type=submit]:active {
+button[type=submit]:active {
   outline-color: var(--green);
   color: var(--green);
 }
@@ -313,6 +314,7 @@ input[type=submit]:active {
   color: var(--white);
 }
 .page-footer .subscribe #email {
+  width: 228px;
   padding: 10px 7px 10px 10px;
   margin-right: 10px;
   background-color: var(--basic-black);

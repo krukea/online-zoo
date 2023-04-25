@@ -2,7 +2,9 @@
 
 .watch-online {
   height: 700px;
-  background: url('/assets/images/giant-panda.jpg') 0 -80px no-repeat;
+  background-image: url('/assets/images/giant-panda.jpg');
+  background-position: 0 -80px;
+  background-repeat: no-repeat;
   background-size: cover;
 
   display: flex;
@@ -21,28 +23,27 @@
   align-items: center;
   position: relative;
 
+  .circle {
+    width: 465px;
+    height: 465px;
+    position: absolute;
+    bottom: 118px;
+    left: 0;
+    border-radius: 50%;
+    background: var(--orange);
+  }
+
   p {
     margin: 0 0 60px 0;
     position: relative;
     font-weight: 700;
-    font-size: 106.496px;
+    font-size: 106px;
     line-height: 75%;
 
     text-align: center;
     text-transform: uppercase;
 
     color: #ffffff;
-
-    &::before {
-      content: '';
-      width: 465px;
-      height: 465px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      border-radius: 50%;
-      background: var(--orange);
-    }
 
     .highlight {
       color: var(--yellow);
@@ -73,6 +74,7 @@
 }
 
 .animals {
+  position: relative;
   padding: 40px 0 100px 0;
 
   .animals-container {
