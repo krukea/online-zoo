@@ -201,18 +201,22 @@ h3 {
   cursor: pointer;
   padding: 16px;
   min-width: 298px;
+  text-align: center;
 }
 .btn.btn-square {
   border-radius: 5px;
 }
 .btn:hover {
   background: var(--dark-orange);
+  color: var(--white);
 }
 .btn:active {
   background: var(--green);
+  color: var(--white);
 }
 .btn:disabled {
   background: var(--gray);
+  color: var(--white);
 }
 
 input[type=text] {
@@ -263,6 +267,7 @@ input[type=submit]:active {
 .logo__link {
   padding-right: 5px;
   max-width: 82px;
+  max-height: 52px;
 }
 
 .site-navigation {
