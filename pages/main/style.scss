@@ -81,6 +81,30 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+
+    &::before {
+      content: '';
+      width: 62px;
+      height: 62px;
+      background-color: var(--orange);
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      left: calc(50% - (1160px / 2) - 82px);
+      top: 39%;
+    }
+
+    &::after {
+      content: '';
+      width: 62px;
+      height: 62px;
+      background-color: var(--orange);
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      left: calc(50% - (1160px / 2) - 20px);
+      top: 39%;
+    }
   }
 
   &::before {
@@ -111,5 +135,67 @@
     grid-gap: 20px 30px;
 
     margin-bottom: 80px;
+  }
+
+  .animals__item {
+    border: 1px solid var(--plain-orange);
+    border-radius: 5px;
+    width: 366px;
+    height: 426px;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #pandas {
+    background-image: url('/assets/images/pandas.jpg');
+  }
+
+  #eagles {
+    background-image: url('/assets/images/eagle.jpg');
+  }
+
+  #gorillas {
+    background-image: url('/assets/images/gorilla.jpg');
+  }
+
+  #sloth {
+    background-image: url('/assets/images/sloth.jpg');
+  }
+
+  #cheetah {
+    background-image: url('/assets/images/cheetah.jpg');
+  }
+
+  #penguin {
+    background-image: url('/assets/images/penguin.jpg');
+  }
+
+  .animals__description {
+    position: absolute;
+    background: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 8px 13px 14px 16px;
+
+    p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 120%;
+    }
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+    }
   }
 }
