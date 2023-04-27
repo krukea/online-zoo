@@ -32,6 +32,7 @@
   --green: #4b9200;
   --orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   --orange-darker: linear-gradient(113.96deg, #fa6f32 1.49%, #fe9013 101.44%);
+  --orange-lighter: #fe9013;
   --plain-orange: #f9804b;
   --yellow: #ffee2e;
   --orange-gradient: linear-gradient(
