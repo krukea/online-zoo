@@ -276,12 +276,17 @@
 .testimonials .testimonials__item {
   width: 268px;
   height: 391px;
-  background: var(--light-gray);
+  position: relative;
+  border: 2px solid transparent;
   border-radius: 20px;
-  border: 2px solid;
-  border-image-source: var(--pink-gradient);
-  padding: 15px 15px 19px 16px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(var(--light-gray), var(--light-gray)), var(--pink-gradient);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
   overflow: hidden;
+}
+.testimonials .testimonials__item-wrap {
+  padding: 13px 13px 17px 14px;
 }
 .testimonials .testimonials__item-head {
   display: flex;
@@ -310,9 +315,14 @@
 .testimonials .scroll {
   width: 599px;
   height: 8px;
+  background: #f5f7f6;
   background: var(--orange-lighter);
   border-radius: 5px;
   margin: 0 auto 31px auto;
+}
+.testimonials .scroll span {
+  background: var(--orange-lighter);
+  width: 115px;
 }
 .testimonials .btn {
   display: block;
